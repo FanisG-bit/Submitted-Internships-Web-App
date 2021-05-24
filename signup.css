@@ -1,0 +1,222 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+}
+
+body{
+
+}
+
+#leftpart_box{
+	float: left;
+	width: 50%;
+	height: 100vh; /* found in -> https://stackoverflow.com/questions/1575141/how-to-make-
+				   a-div-100-height-of-the-browser-window*/
+	background-color: #7FFFD4;
+	padding: 100px 50px 100px 50px;
+}
+
+#leftpart_content{
+	width: 100%;
+	height: 100%;
+}
+
+#quote{
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 150px;
+}
+
+#leftpart_Image{
+	width: 500px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#rightpart_box{
+	float: left;
+	width: 50%;
+	height: 100vh;
+	background-color: #403F3F;
+	padding: 100px 100px 0px 100px;
+}
+
+#rightpart_content{
+	width: 100%;
+	height: 100%;
+	color: white;
+}
+
+#signup_title{
+	font-size: 30px;
+}
+
+#signupPlan{
+	margin-top: 20px;
+	color: #7FFFD4;
+}
+
+form{
+	margin-top: 5px;
+}
+
+#text_inputsID{
+	margin-top: 20px;
+}
+
+#employer{
+	margin-left: 10px;
+}
+
+#text_inputsID label{
+	margin-bottom: 0px;
+	color: #7FFFD4;
+}
+
+#username_field{
+	width: 100%;
+	height: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-style: none none solid none;
+	border-color: white;
+	border-width: 1px;
+  	background: transparent;
+  	color: white;
+}
+
+#username_field:focus{
+	outline: none;
+}
+
+#password_field{
+	width: 100%;
+	height: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-style: none none solid none;
+	border-color: white;
+	border-width: 1px;
+  	background: transparent;
+  	color: white;
+}
+
+#password_field:focus{
+	outline: none;
+}
+
+#showPasswordIcon{
+	position: absolute;
+	top: 85px;
+	right: 30px;
+}
+
+#email_field{
+	width: 100%;
+	height: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-style: none none solid none;
+	border-color: white;
+	border-width: 1px;
+  	background: transparent;
+  	color: white;
+}
+
+#email_field:focus{
+	outline: none;
+}
+
+button, input[type="submit"], input[type="reset"] {  /*get rid of input default stylings*/
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#signup{
+	background-color: red; 
+	width: 250px; 
+	height: 30px;
+	padding: 6px; 
+	border-radius: 25px; 
+	font-weight: bold;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cancel{
+	margin-top: 8px;
+	background-color: grey; 
+	width: 150px; 
+	height: 30px;
+	padding: 6px; 
+	border-radius: 25px; 
+	font-weight: bold;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #505050;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #505050;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #505050;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none; /*removes default underline*/
+    color: inherit; /*remove default color*/
+    cursor: auto;
+}
+
+/*large devices*/
+@media (min-width: 1200px){ /*from 1201 and after*/
+	
+}
+
+/*medium devices*/
+@media (min-width: 991px) and (max-width: 1200px){
+	#leftpart_Image{
+		width: 400px;
+	}
+}
+
+/*small devices*/
+@media (min-width:651px) and (max-width: 991px){ /*until 990*/
+	#leftpart_Image{
+		width: 300px;
+	}
+	#leftpart_box{
+		padding: 100px 20px 100px 20px
+	}
+	#rightpart_box{
+		padding: 100px 50px 0px 50px;
+	}
+}
+
+/*extra small*/
+@media (max-width: 651px){ 	
+	#leftpart_box{
+		display: none;
+	}
+	#rightpart_box{
+		width: 100%;
+		padding: 100px 20px 0px 20px;
+	}
+}

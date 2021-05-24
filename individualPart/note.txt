@@ -1,0 +1,5 @@
+The files of the individual needs to replce the corresponding 
+original files (meaning the detailedInternship.php and
+detailedInternship.php).
+Of course there may need to be some changes when it comes to
+the linking of the pages (since the names change).

@@ -1,0 +1,528 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+}
+
+body{
+	line-height: normal;
+}
+
+h1{
+	margin-bottom: 0px;
+}
+
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+h5 {
+  display: block;
+  font-size: .83em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+#navigation_box{
+	width: 100%;
+	height: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 25%;
+	padding-right: 25%;
+	border-style: none none solid none;
+	border-width: 1px;
+}
+
+#navigation_content{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#title_image{
+	float: left;
+}
+
+#title_name{
+	float: left;
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+
+#siggin_button{
+	float: left;
+	background-color: gray;
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	right: 160px;
+	top: 15px;
+	padding: 6px;
+	border-radius: 25px;
+	font-weight: bold;
+	color: white;
+}
+
+#siggin_button_content{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+#signup_button{
+	float: left;
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	right: 0px;
+	top: 15px;
+	padding: 6px;
+	background-color: #ff0000;
+	border-radius: 25px;
+	font-weight: bold;
+	color: white;
+}
+
+#signup_button_content{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+#hamburger_icon{
+	display: none;
+	position: absolute;
+	right: 0px;
+	top: 8px;
+}
+
+#settingsIcon{
+	width: 40px;
+	position: absolute;
+	right: -45px;
+	top: 8px;	
+	display: block;
+}
+
+/*hamburger_icon dropdown related*/
+#hamburger_icon_dropdown_box{
+	position: absolute;
+	right: -4px; 
+	height: 145px;
+	width: 200px;
+	background-color: black;
+	top: 40px;
+	border-radius: 10px;
+	padding: 20px;
+	display: none;
+	z-index: 5;
+}
+
+#hamburger_icon_dropdown_content{
+	color: white;
+	text-align: center;
+}
+
+.collapsedButtons:hover{
+	background-color: white;
+	color: black;
+}
+
+#footer_box{
+	background-color: black;
+	width: 100%;
+	height: 200px;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#footer_box_content{
+	width: 100%;
+	height: 100%;
+}
+
+#follow_box{
+	width: 100%;
+	padding-top: 30px;
+}
+#follow_box_content{
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+#social_box{
+	margin-top: 20px;
+	/*this centers the social media divs
+	found in: 
+	https://stackoverflow.com/questions/114543/how-to-
+	horizontally-center-an-element;*/
+	width:100%;
+	display: flex;
+	justify-content: center;
+}
+
+#social_box_content{
+}
+
+.media{
+	width: 130px;
+	float: left;
+}
+
+.media_icon{
+	width: 35px;
+	float: left;
+}
+
+.media_title{
+	float: left;
+	text-align: center;
+	margin-left: 10px;
+	margin-top: 6px;
+	color: white;
+}
+
+#additional_info_box{
+	width: 100%;
+	margin-top: 50px;
+}
+
+#additional_info_content{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#additional_info_content a{
+	text-decoration: underline;
+	color: white;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none; /*removes default underline*/
+    color: inherit; /*remove default color*/
+    cursor: auto;
+}
+
+
+/*NEW STYLINGS*/
+
+#internship_page_box{
+	padding-right: 25%;
+	padding-left: 25%;
+}
+
+#internship_page_content{
+	align-items: center;
+}
+
+#company_name_id{
+	text-align: left;
+	font-size: 20px;
+	margin-bottom: 5px;
+	color: gray;
+}
+
+#company_location_id{
+	text-align: left;
+	font-size: 20px;
+	margin-bottom: 5px;
+	color: gray;
+}
+
+#date_posted_id{
+	text-align: left;
+	font-size: 20px;
+	margin-bottom: 5px;
+	color: gray;
+}
+
+#isPaidId{
+	text-align: center;
+	width: 68px;
+	height: 20px;
+	margin-bottom: 45px;
+	font-size: 12px;
+}
+
+#duration{
+	text-align: left;
+	font-size: 20px;
+	margin-bottom: 5px;
+	color: gray;
+}
+
+.label {
+  color: white;
+  padding: 3px;
+}
+
+#internship_desc_box{
+	margin-bottom: 40px;
+	margin-top: 8px;
+}
+
+#internship_desc_content{
+
+}
+
+#internship_responsib_box{
+	margin-bottom: 40px;
+	margin-top: 8px;
+}
+
+#internship_responsib_content{
+
+}
+
+#internship_skills_box{
+	margin-bottom: 40px;
+	margin-top: 8px;
+}
+
+#internship_skills_content{
+
+}
+
+#apply_button{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 20px;
+}
+
+#company_logo{
+	width: 50px;
+	height: 50px;
+}
+
+.success {background-color: #04AA6D;} /* Green */
+
+/**large devices*/*/
+@media (min-width: 1200px){
+}
+
+/*medium devices*/
+@media (min-width: 991px) and (max-width: 1200px){
+	/*body{
+		color: red;
+	}*/
+	#siggin_button{
+		display: none;
+	}
+	#signup_button{
+		display: none;
+	}
+	#hamburger_icon{
+		display: block;
+	}
+	#settingsIcon{
+		display: none;
+	}
+}
+
+/*small devices*/
+@media (min-width:651px) and (max-width: 991px){ /*until 990*/
+	#additional_info_box{
+		margin-top: 30px;
+	}
+	#siggin_button{
+		display: none;
+	}
+	#signup_button{
+		display: none;
+	}
+	#hamburger_icon{
+		display: block;
+	}
+	#settingsIcon{
+		display: none;
+	}
+	#accountpartId{
+		width: 100%; 
+		height: 100%; 
+		position: relative; 
+		border-style: none; 
+		border-color: lightgray; 
+		height: 330px; 
+		padding: 0px;
+	}
+	#secondhalfBox{
+		float: left;
+		margin-top: 30px;
+		background-color: grey;
+		width: 75%;
+		height: 450px;
+		padding: 40px 40px 40px 40px;
+		color: black;
+	}
+	#choicesBox{
+		margin-top: 30px;
+		background-color: lightgrey;
+		width: 25%;
+		height: 450px;
+		padding: 40px 30px 40px 30px;
+		float: left;
+	}
+	#internship_desciption{
+		width: 300px;
+	}
+	#internship_responsibilities{
+		width: 300px;
+	}
+	#internship_skills{
+		width: 300px;
+	}
+	#firstnameid{
+		position: absolute;
+		top: -5px;
+		left: 100px;
+	}
+
+	#lastnameid{
+		position: absolute;
+		top: 35px;
+		left: 100px;
+	}
+	#jobtitleid{
+		position: absolute;
+		top: 78px;
+		left: 100px;
+	}
+	#internship_page_box{
+		padding-left: 10%;
+		padding-right:10%;
+	}
+}
+
+/*extra small*/
+@media (max-width: 651px){ 
+	#additional_info_box{
+		margin-top: 20px;
+	}
+	.media_icon{
+		width: 20px;
+	}
+	#follow_box{
+		padding-top: 10px;
+	}
+	#social_box{
+		margin-top: 10px;
+	}
+	#social_box_content{
+		width: 130px;
+	}
+	#navigation_box{
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	#siggin_button{
+		display: none;
+	}
+	#signup_button{
+		display: none;
+	}
+	#hamburger_icon{
+		display: block;
+	}
+	#settingsIcon{
+		display: none;
+	}	
+	#accountpartId{
+		width: 100%; 
+		height: 100%; 
+		position: relative; 
+		border-style: none; 
+		border-color: lightgray; 
+		height: 330px; 
+		padding: 0px;
+	}
+	#secondhalfBox{
+		float: left;
+		margin-top: 0px;
+		background-color: grey;
+		width: 100%;
+		height: 450px;
+		padding: 40px 20px 40px 20px;
+		color: black;
+	}
+	#choicesBox{
+		margin-top: 0px;
+		background-color: lightgrey;
+		width: 100%;
+		height: 130px;
+		padding: 20px 30px 20px 30px;
+		float: left;
+	}
+
+	#favourites{
+		margin-top: 10px;
+		font-size: 20px;
+	}
+
+	#createPost{
+		margin-top: 10px;
+		font-size: 20px;
+	}
+	#container{
+		padding-left: 0%;
+		padding-right: 0%;
+		overflow: auto;
+	}
+	#purposeOfPage{
+		display: none;
+	}
+
+	#details{
+		display: none;
+	}
+	#container{
+		margin-bottom: 0px;
+	}
+	#firstnameid{
+		position: absolute;
+		top: -5px;
+		left: 100px;
+	}
+
+	#lastnameid{
+		position: absolute;
+		top: 35px;
+		left: 100px;
+	}
+	#jobtitleid{
+		position: absolute;
+		top: 78px;
+		left: 100px;
+	}
+	#internship_desciption{
+		width: 300px;
+	}
+	#internship_responsibilities{
+		width: 300px;
+	}
+	#internship_skills{
+		width: 300px;
+	}
+	#internship_page_box{
+		padding-left: 5%;
+		padding-right:5%;
+	}
+}

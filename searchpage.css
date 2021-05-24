@@ -1,0 +1,610 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+}
+
+body{
+	line-height: normal;
+}
+
+.boxesresults{
+	display: none;
+}
+
+button, input[type="submit"], input[type="reset"] {  /*get rid of input default stylings*/
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+h5 {
+  display: block;
+  font-size: .83em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+#navigation_box{
+	width: 100%;
+	height: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 25%;
+	padding-right: 25%;
+	border-style: none none solid none;
+	border-width: 1px;
+}
+
+#navigation_content{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#title_image{
+	float: left;
+}
+
+#title_name{
+	float: left;
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+
+#siggin_button{
+	float: left;
+	background-color: gray;
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	right: 160px;
+	top: 15px;
+	padding: 6px;
+	border-radius: 25px;
+	font-weight: bold;
+	color: white;
+}
+
+#siggin_button_content{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+#signup_button{
+	float: left;
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	right: 0px;
+	top: 15px;
+	padding: 6px;
+	background-color: #ff0000;
+	border-radius: 25px;
+	font-weight: bold;
+	color: white;
+}
+
+#signup_button_content{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+#hamburger_icon{
+	display: none;
+	position: absolute;
+	right: 0px;
+	top: 8px;
+}
+
+#settingsIcon{
+	width: 40px;
+	position: absolute;
+	right: -45px;
+	top: 8px;	
+	display: block;
+}
+
+/*hamburger_icon dropdown related*/
+#hamburger_icon_dropdown_box{
+	position: absolute;
+	right: -4px; 
+	height: 145px;
+	width: 200px;
+	background-color: black;
+	top: 40px;
+	border-radius: 10px;
+	padding: 20px;
+	display: none;
+	z-index: 5;
+}
+
+#hamburger_icon_dropdown_content{
+	color: white;
+	text-align: center;
+}
+
+.collapsedButtons:hover{
+	background-color: white;
+	color: black;
+}
+
+#footer_box{
+	background-color: black;
+	width: 100%;
+	height: 200px;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#footer_box_content{
+	width: 100%;
+	height: 100%;
+}
+
+#follow_box{
+	width: 100%;
+	padding-top: 30px;
+}
+#follow_box_content{
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+#social_box{
+	margin-top: 20px;
+	/*this centers the social media divs
+	found in: 
+	https://stackoverflow.com/questions/114543/how-to-
+	horizontally-center-an-element;*/
+	width:100%;
+	display: flex;
+	justify-content: center;
+}
+
+#social_box_content{
+}
+
+.media{
+	width: 130px;
+	float: left;
+}
+
+.media_icon{
+	width: 35px;
+	float: left;
+}
+
+.media_title{
+	float: left;
+	text-align: center;
+	margin-left: 10px;
+	margin-top: 6px;
+	color: white;
+}
+
+#additional_info_box{
+	width: 100%;
+	margin-top: 50px;
+}
+
+#additional_info_content{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#additional_info_content a{
+	text-decoration: underline;
+	color: white;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/*NEW STYLINGS FOR THIS PAGE*/
+
+#searching_section{
+	height: 100px;
+	background-color: #F5F5F5;
+}
+
+#searchsort_box{
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 25px;
+}
+
+#searchsort_content{
+	width: 100%;
+	height: 100%;
+}
+
+#searchField{
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	outline: none;
+	-webkit-transition: 0.5s;
+  	transition: 0.5s;
+  	margin-right: 5px;
+  	height: 56px;
+}  	
+
+input#searchField:focus {
+  border: 3px solid #555;
+}
+
+#sorting_box{
+	margin-left: 30px;
+}
+
+#searchButton{
+	height: 48px; 
+	width: 100px;
+	margin-top: 3px;
+}
+
+#spacebetweenChoose{
+	margin-top: 15px; 
+	margin-right: 30px;
+}
+
+#disciplines_button{
+	height: 56px;
+	margin-right: 30px;
+}
+
+#discipline_options{
+	background-color: #6c757d;
+	height: 300px;
+	width: 300px;
+	padding: 30px 40px 40px 40px;
+	position: absolute;
+	display: none;
+	border-radius: 10px;
+	top: 57px;
+	z-index: 5;
+}
+
+#discipline_options_content{
+	color: white;
+	width: 100%;
+	height: 100%;
+}
+
+#discipline_options_content input{
+	margin-top: 5px;
+}
+
+#discipline_options_content > button{
+	margin-top: 5px;
+}
+
+#location_button{
+	height: 56px;
+	margin-right: 30px;
+}
+
+#location_options{
+	background-color: #6c757d;
+	height: 500px;
+	width: 300px;
+	position: absolute;
+	display: none;
+	border-radius: 10px;
+	padding: 30px 40px 40px 40px;
+	top: 57px;
+	z-index: 5;
+}
+
+#location_options_content{
+	color: white;
+	width: 100%;
+	height: 100%;
+}
+
+#location_options_content input{
+	margin-top: 5px;
+}
+
+#location_options_content > button{
+	margin-top: 5px;
+}
+
+#seachFieldAndButton{
+	position: absolute;
+	right: 15%;
+}
+
+
+/*css code for switch*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 24px;
+  margin-bottom: 0px;
+  margin-top: 18px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#results_section{	
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 50px;
+}
+
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none; /*removes default underline*/
+    color: inherit; /*remove default color*/
+    cursor: auto;
+}
+
+/* STYLINGS RELATED TO THE RESULT BOXES (RETRIEVED FROM DATABASE)*/
+
+#resultBox{
+	width: 150px;
+	height: 200px;
+	padding: 5px;
+	margin-right: 30px;
+	margin-top: 30px;
+	background-color: #d3d3d3;
+	text-align: center;
+	border-radius: 15px;
+	float: left;
+	position: relative;
+	padding-top: 20px;
+}
+#resultContent{
+	color: gray;
+}
+
+#resultTitle{
+	font-weight: bold;
+	color: #383838;
+}
+
+#resultCompany{
+	margin-top: 4px;
+	font-size: 12px;
+	position: absolute;
+	top:70px;
+	left:25%;
+	font-style: italic;
+}
+
+#resultLocation{
+	font-size: 12px;
+	position: absolute;
+	top: 60px;
+	left:25%;
+	font-style: italic;
+}
+
+#resultDate{
+	font-size: 12px;
+	position: absolute;
+    bottom: 10px;
+    left:50%;
+    margin-left:-35px;
+    font-style: italic;
+}
+
+#resultDiscipline{
+	font-size: 12px;
+	position: absolute;
+	bottom: 50px;
+	left: 15px; 
+    font-style: italic;
+}
+
+#seeMoreBox{
+	width: 100%;
+	height: 20px;
+	color: 	#FF4500;
+	position: absolute;
+	top: 90px;
+	left: 0px; /*important*/
+}
+
+#seeMoreContent{
+	width: 100%;
+}
+
+#loadMore{
+	margin-top: 30px;
+}
+
+/*large devices*/
+@media (min-width: 1240px){ /*from 1201 and after*/
+}
+
+/*medium devices*/
+@media (min-width: 991px) and (max-width: 1240px){
+	#siggin_button{
+		display: none;
+	}
+	#signup_button{
+		display: none;
+	}
+	#hamburger_icon{
+		display: block;
+	}
+	#searchsort_box{
+		padding-right: 5%; 
+		padding-left: 5%;
+	}
+	#seachFieldAndButton{
+		position: absolute;
+		right: 5%;
+	}
+	#settingsIcon{
+		display: none;
+	}
+}
+
+/*small devices*/
+@media (min-width:651px) and (max-width: 991px){ /*until 990*/
+	#siggin_button{
+		display: none;
+	}
+	#signup_button{
+		display: none;
+	}
+	#hamburger_icon{
+		display: block;
+	}
+	#searchsort_box{
+		padding-right: 0%; 
+		padding-left: 5%;
+	}
+	#seachFieldAndButton{
+		position: absolute;
+		right: 2%;
+		top: 180px;
+	}
+	#searching_section{
+		height: 180px;
+	}
+	#settingsIcon{
+		display: none;
+	}
+	#additional_info_box{
+		margin-top: 30px;
+	}
+}
+
+/*extra small*/
+@media (max-width: 651px){ 
+	#navigation_box{
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	#siggin_button{
+		display: none;
+	}
+	#signup_button{
+		display: none;
+	}
+	#hamburger_icon{
+		display: block;
+	}
+	.media_icon{
+		width: 20px;
+	}
+	#follow_box{
+		padding-top: 10px;
+	}
+	#social_box{
+		margin-top: 10px;
+	}
+	#social_box_content{
+		width: 130px;
+	}
+	#searchsort_box{
+		padding-right: 0%; 
+		padding-left: 5%;
+	}
+	#seachFieldAndButton{
+		position: absolute;
+		right: 2%;
+		top: 180px;
+	}
+	#searching_section{
+		height: 180px;
+	}
+	#disciplines_button{
+		height: 56px;
+		margin-right: 5px; 
+	}
+	#spacebetweenChoose{
+		margin-top: 15px; 
+		margin-right: 5px;
+	}
+	#location_button{
+		margin-right: 5px;
+	}
+	#settingsIcon{
+		display: none;
+	}	
+	#additional_info_box{
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,7 @@
+paper plane: https://www.flaticon.com/free-icon/paper-plane_149446?term=paper%20plane&page=1&position=74&page=1&position=74&related_id=149446&origin=search
+
+student-icon: https://www.flaticon.com/free-icon/reading-book_3068380?term=student&page=1&position=11&page=1&position=11&related_id=3068380&origin=search
+
+employer-icon: https://www.flaticon.com/free-icon/hr_1876344?term=hr&page=1&position=15&page=1&position=15&related_id=1876344&origin=search
+
+upgrade-icon: https://www.flaticon.com/free-icon/upgrade_3534023?term=upgrade&page=1&position=7&page=1&position=7&related_id=3534023&origin=search
